@@ -1,28 +1,20 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <VideoLanding> </VideoLanding>
+    <TextLanding> </TextLanding>
   </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script lang="ts">
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+import Vue from "vue";
+import VideoLanding from "@/components/landing/VideoLanding.vue";
+import TextLanding from "@/components/landing/TextLanding.vue";
+
+export default Vue.extend({
+  name: "App",
+  components: { TextLanding, VideoLanding },
+  data: () => ({
+  }),
+});
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
