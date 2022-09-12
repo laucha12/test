@@ -7,7 +7,7 @@
     </video>
     <div class="overlay">
       <v-card elevation="23" outlined height="200" width="600">
-        <v-span> DELTA </v-span>
+        <v-span class="main"> DELTA </v-span>
       </v-card>
     </div>
   </div>
@@ -46,6 +46,11 @@ export default {
   display: block;
 }
 
+.main {
+  color: white;
+  font-size: 200px;
+  font-weight: bolder;
+}
 #v0 {
   position: fixed;
   top: 0;
